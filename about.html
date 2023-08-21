@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Kawal Gagasan</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T9JWH6PG');</script>
+      <!-- End Google Tag Manager -->
+</head>
+<body>
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9JWH6PG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->   
+  <nav class="fixed-top navbar navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Kawal Gagasan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="gagasan.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Gagasan 2024
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="anies.html">Anies Baswedan</a>
+              <a class="dropdown-item" href="prabowo.html">Prabowo Subianto</a>
+              <a class="dropdown-item" href="ganjar.html">Ganjar Pranowo</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="biografi.html">Biografi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="submit.html">Submit Gagasan</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="col spacer my-3" style="color:#E9E4D8;">
+    _
+  </div>
+  <section class="container submission py-2 mt-4">
+                
+    <div style="height: 20px;"></div>
+    <div>
+      <h2>Sekilas Tentang Kami</h2>
+      <p class="text text-justify mb-5">KawalGagasan.id adalah platform yang berdedikasi untuk menyediakan informasi obyektif dan terukur mengenai <strong>biografi</strong> dan <strong>gagasan 2024</strong> yang diusung oleh calon presiden dan wakil presiden pada Pemilihan Presiden 2024.
+        <br><br>Dalam upaya mewujudkan pemilu 2024 yang lebih sehat, kami berfokus pada menghidupkan gagasan yang memberikan wawasan yang lebih jelas dan objektif kepada masyarakat
+      </p>
+    </div>
+    <div>
+      <h2>Crowd-Sourcing</h2>
+      <p class="text text-justify mb-5">Kami memegang prinsip crowd-sourcing, di mana siapapun memiliki kesempatan untuk berkontribusi dengan mengirimkan gagasan paslon capres mereka yang dukung dengan melampirkan link berita / video yang sah/ relevan.</p>
+    </div>
+    <div>
+      <h2>Kolaborasi</h2>
+      <p class="text text-justify mb-5">Jika Anda tertarik untuk berkolaborasi dengan kami atau ingin berdiskusi lebih lanjut, silakan hubungi kami melalui email <a href="mailto:email@kawalgagasan.id">mail@kawalgagasan.id</a>.</p>
+    </div>
+    <div>
+      <h2>Submit Gagasan</h2>
+      <p class="text text-justify mb-5">Jika Anda ingin menyumbangkan gagasan paslon capres yang Anda dukung, pastikan untuk menyertakan bukti berita yang sah. Gagasan dapat di submit melalui <a href="submit.html">form ini</a></p>
+    </div>
+    <div>
+      <p>Supported by</p>
+      <img src="supported-logo.png" alt="Supported by Logo">
+    </div>
+
+  </section>
+
+      <div style="height: 80px;"> </div>
+
+      <footer class="fixed-bottom w-100 p-3 mt-5" style="margin: 0; padding-left: 0; padding-right: 0;"> 
+        <h3 class="text-center text-white m-0" id="timer"></h3>
+        <script>
+            var countdownDate = new Date("2024-02-14T10:00:00").getTime();
+          
+            function updateTimer() {
+              var now = new Date().getTime();
+              var distance = countdownDate - now;
+          
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+              document.getElementById("timer").innerHTML = days + " hari " + hours + " jam " + minutes + " menit " + seconds + " detik ";
+          
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "Waktu Habis!";
+              }
+            }
+          
+            var x = setInterval(updateTimer, 1000);
+            updateTimer(); // Panggil fungsi ini segera agar timer muncul tanpa menunggu 1 detik pertama
+          </script>
+        <p class="text-center text-white m-0"> Menuju Pemilu Presiden - 14 Februari 2024</p>
+        <!-- <p class="text-center text-light"> &copy Kawal Gagasan</p> -->
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

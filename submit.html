@@ -1,0 +1,121 @@
+
+
+
+        <!DOCTYPE html>
+        <html lang="id">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+            <title>Kawal Gagasan</title>
+            <link rel="stylesheet" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-T9JWH6PG');</script>
+              <!-- End Google Tag Manager -->
+        </head>
+        <body>
+          <!-- Google Tag Manager (noscript) -->
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9JWH6PG"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          <!-- End Google Tag Manager (noscript) -->
+
+          <nav class="fixed-top navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Kawal Gagasan</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="gagasan.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Gagasan 2024
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="anies.html">Anies Baswedan</a>
+                      <a class="dropdown-item" href="prabowo.html">Prabowo Subianto</a>
+                      <a class="dropdown-item" href="ganjar.html">Ganjar Pranowo</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="biografi.html">Biografi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Tentang Kami</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="submit.html">Submit Gagasan</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="col spacer my-3" style="color:#E9E4D8;">
+            _
+          </div>
+
+          <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsrvR4p61xzGU1z8rxVQs1l8igQQDdNz9x7zPm2NGHt1cYsA/viewform?embedded=true" width="640" height="1217" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        
+              <!-- <div class="row fade-in-up mt-2"  style="background-color:#433c3c"> -->
+                <!-- <div class="row"> -->
+                    <!-- <div class="col-lg-12 col-sm-12"> -->
+                        <!-- <marquee behavior="scroll" direction="left">
+                          <h1 class="text align-text-top" style="font-size: 30px;color: #E9E4D8">Sudah tentukan pilihan di 14 Februari, 2024 besok?</h1>
+                        </marquee> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        
+              <section class="container submission py-2 mt-4">
+                
+                <div style="height: 20px;"></div>
+                
+                <h2>Submit Gagasan Anda</h2>
+                <p>Anda dapat mengirimkan gagasan dari calon presiden yang belum terekam melalui <a href="https://forms.gle/NimqXdW7y4fgyrnt5">form ini</a>.</p>
+
+                    
+            
+              </section>
+        
+              <div style="height: 80px;"> </div>
+        
+              <footer class="fixed-bottom w-100 p-3 mt-5" style="margin: 0; padding-left: 0; padding-right: 0;"> 
+                <h3 class="text-center text-white m-0" id="timer"></h3>
+                <script>
+                    var countdownDate = new Date("2024-02-14T10:00:00").getTime();
+                  
+                    function updateTimer() {
+                      var now = new Date().getTime();
+                      var distance = countdownDate - now;
+                  
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                  
+                      document.getElementById("timer").innerHTML = days + " hari " + hours + " jam " + minutes + " menit " + seconds + " detik ";
+                  
+                      if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("timer").innerHTML = "Waktu Habis!";
+                      }
+                    }
+                  
+                    var x = setInterval(updateTimer, 1000);
+                    updateTimer(); // Panggil fungsi ini segera agar timer muncul tanpa menunggu 1 detik pertama
+                  </script>
+                <p class="text-center text-white m-0"> Menuju Pemilu Presiden - 14 Februari 2024</p>
+                <!-- <p class="text-center text-light"> &copy Kawal Gagasan</p> -->
+              </footer>
+        
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        </body>
+        </html>

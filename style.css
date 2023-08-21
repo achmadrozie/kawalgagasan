@@ -1,0 +1,322 @@
+:root {
+  --color1: #433c3c;
+  --color2: #847F7F;
+  --color3: #E9E4D8;
+  --color4: #D0522A;
+  --color5: #993625;
+
+  text: 1rem;
+
+}
+
+.image-source {
+  font-size: 12px;
+}
+
+.quick-button {
+  height: auto; 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+}
+.quick-button .btn {
+  border: none; /* Menonaktifkan border */
+  background-color: #433c3c; /* Warna latar belakang */
+  color: #E9E4D8; /* Warna teks */
+  width: 200px;
+  margin: 5px 15px;
+  font-weight: 500;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+
+nav {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--color1);
+  /* color: var(--color1); */
+}
+
+.img-fluid.full-screen {
+  width: 100%;       /* Mengatur lebar menjadi 100% dari lebar layar */
+  max-height: 500px; /* Anda bisa mengganti ini dengan tinggi yang Anda inginkan */
+  height: auto;      /* Menjaga rasio aspek */
+  object-fit: cover; /* Memastikan gambar menutupi area yang ditetapkan tanpa mengubah rasio aspek */
+  display: block;    /* Menghilangkan margin putih di bawah gambar */
+  border-radius: 15px; /* Efek rounded */
+}
+
+.dropdown-menu{
+  background-color: var(--color3);
+}
+
+
+body {
+  background-color: var(--color3);
+  /* color: var(--color3); */
+
+}
+
+
+footer {
+  background-color: var(--color1);
+}
+
+/* ukuran text */
+body {
+  font-size: 1rem; /* Sama dengan 16px */
+}
+
+h1 {
+  font-size: 2rem; /* Sama dengan 32px */
+}
+
+h2 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h4 {
+  font-size: 1.125rem; /* 18px */
+}
+
+h5 {
+  font-size: 1rem; /* 16px */
+}
+p {
+  font-size: 1rem; /* Sama dengan 16px */
+}
+
+.text {
+  color: var(--color1); /* Warna coklat */
+}
+
+a {
+  /* color: inherit; Mengatur warna tautan menjadi sama dengan warna teks induknya */
+  /* text-decoration: none; Menghapus garis bawah dari tautan */
+}
+
+img {
+  width: 16rem; /* Atur lebar gambar ikon */
+}
+
+.full-width-btn {
+  width: 100%;
+}
+
+
+/* EFFECT - fade in effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+
+/* CONTENT - GAGASAN */
+.gagasan {
+  white-space: nowrap;
+  display: flex;
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+}
+
+.gagasan .gagasan-content {
+  display: flex;
+  flex-wrap: wrap; 
+  /* margin-right: 10px; */
+  /* margin-left: 20px; */
+}
+
+@media (min-width: 768px) {
+  .gagasan .gagasan-content .card {
+    flex: 0 0 calc(50% - 20px); /* Ini akan memastikan bahwa hanya dua kartu yang akan muat dalam satu baris */
+    /* width: 300px; Atur lebar card sesuai kebutuhan */
+    margin: 10px;
+    background-color: var(--color3);
+    color: var(--color1);
+    padding: 15px;
+    border-radius: 15px; /* Efek rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    /* margin-left: 8px; */
+  }
+}
+@media (max-width: 767px) {
+  .gagasan .gagasan-content .card {
+    flex: 0 0 100%; /* Ini akan memastikan bahwa hanya satu kartu yang akan muat dalam satu baris */
+    /* width: 300px; Atur lebar card sesuai kebutuhan */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color3);
+    color: var(--color1);
+    padding: 15px;
+    border-radius: 15px; /* Efek rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    /* margin-left: 8px; */
+  }
+}
+
+
+.gagasan .gagasan-content .card {
+  word-wrap: break-word;
+  white-space: normal; /* Mengizinkan teks untuk berpindah ke baris berikutnya */
+  overflow: hidden; /* Memotong bagian teks yang melampaui batas elemen */
+}
+
+
+.gagasan .gagasan-content .card .icon img {
+  width: 50px; /* Atur lebar gambar ikon */
+  padding-bottom: 15px;
+  /* position:relative; */
+  /* max-width: 100% */
+  
+}
+
+.gagasan .gagasan-content .card .equal-height > div {
+  display: flex;
+  align-items: center; /* Menengahkan elemen secara vertikal */
+}
+
+.gagasan .gagasan-content .card h1 {
+  margin: 0; /* Menghapus margin default h1 */
+}
+.gagasan .gagasan-content .card .content .more {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.gagasan .gagasan-content .card .container:hover .content .more {
+  max-height: 200px; /* Anda dapat menyesuaikan tinggi ini */
+}
+
+.gagasan .gagasan-content .card .read-more-btn {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.no-idea {
+  color: var(--color2);
+}
+
+/* CONTENT - Urgensi Pemilu 2024 Card */
+  .fun-fact-1 {
+    white-space: nowrap;
+    display: flex;
+  }
+
+  .fun-fact-1 .scrollable-row {
+    display: flex;
+    flex-wrap: wrap; 
+    
+    
+    /* margin: 10px; */
+    
+  }
+
+
+  .fun-fact-1 .scrollable-row .card {
+    word-wrap: break-word;
+    white-space: normal; /* Mengizinkan teks untuk berpindah ke baris berikutnya */
+    overflow: hidden; /* Memotong bagian teks yang melampaui batas elemen */
+  }
+
+  @media (min-width: 768px) {
+    .fun-fact-1 .scrollable-row .card {
+      flex: 0 0 calc(50% - 20px); /* Ini akan memastikan bahwa hanya dua kartu yang akan muat dalam satu baris */
+      /* width: 300px; Atur lebar card sesuai kebutuhan */
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto; 
+      background-color: var(--color3);
+      color: var(--color1);
+      padding: 15px;
+      border-radius: 15px; /* Efek rounded */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+
+
+      /* margin-left: 8px; */
+    }
+  }
+  @media (max-width: 767px) {
+    .fun-fact-1 .scrollable-row .card {
+      flex: 0 0 100%; /* Ini akan memastikan bahwa hanya satu kartu yang akan muat dalam satu baris */
+      /* width: 300px; Atur lebar card sesuai kebutuhan */
+      margin-bottom: 10px;
+      background-color: var(--color3);
+      color: var(--color1);
+      padding: 15px;
+      border-radius: 15px; /* Efek rounded */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+      /* margin-left: 8px; */
+    }
+  }
+
+
+  .fun-fact-1 .scrollable-row .card .icon img {
+    width: 75px; /* Atur lebar gambar ikon */
+    padding-bottom: 15px;
+  }
+
+  .toggle-btn,
+  .toggle-btn:active,
+  .toggle-btn:focus {
+    background-color: var(--color1);
+    color: var(--color3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    border-radius: 10px; /* Efek rounded */
+  }
+
+  /* CONTENT - BIOGRAFI */
+  /* @media (max-width: 768px) {
+    .biografi .row > div {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+   */
+
+/* CASE BIOGRAFI */
+.custom-row {
+  justify-content: center;
+}
+
+.custom-col {
+  border: 1px solid #847F7F;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px #888888;
+  padding-left: 5px; /* atur jarak di sini */
+  padding-right: 5px; /* atur jarak di sini */
+  word-wrap: break-word;
+}
+
+@media (min-width: 992px) {
+  .custom-col {
+      max-width: calc(33.33333% - 15px); /* lebar kolom dengan mengurangi jarak */
+      word-wrap: break-word;
+      padding: 10px;
+  }
+  
+}
