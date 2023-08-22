@@ -96,7 +96,7 @@ p {
   color: var(--color1); /* Warna coklat */
 }
 
-nav a {
+a {
   color: var(--color2);
   /* text-decoration: underline; */
   /* font-size: 12px; Mengatur ukuran font lebih kecil */
@@ -105,14 +105,14 @@ nav a {
   /* right: 0; Posisi di sebelah kanan container */
 }
 
-a:not(nav a) {
-  color: var(--color2);
-  text-decoration: underline;
+/* a:not(nav a) {
+  color: var(--color2); */
+  /* text-decoration: underline; */
   /* font-size: 16px; Mengatur ukuran font lebih kecil */
   /* position: absolute; Memungkinkan penempatan tepat dalam container */
   /* top: 0; Posisi di atas container */
   /* right: 0; Posisi di sebelah kanan container */
-}
+/* } */
 
 
 
