@@ -32,4 +32,3 @@ document.querySelectorAll('.read-more-btn').forEach(function(btn) {
 
   var x = setInterval(updateTimer, 1000);
   updateTimer(); // Panggil fungsi ini segera agar timer muncul tanpa menunggu 1 detik pertama
-

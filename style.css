@@ -98,15 +98,24 @@ p {
   color: var(--color1); /* Warna coklat */
 }
 
-a {
+nav a {
   color: var(--color2);
-  text-decoration: underline;
-  font-size: 12px; /* Mengatur ukuran font lebih kecil */
+  /* text-decoration: underline; */
+  /* font-size: 12px; Mengatur ukuran font lebih kecil */
   /* position: absolute; Memungkinkan penempatan tepat dalam container */
   /* top: 0; Posisi di atas container */
   /* right: 0; Posisi di sebelah kanan container */
-
 }
+
+a:not(nav a) {
+  color: var(--color2);
+  text-decoration: underline;
+  /* font-size: 16px; Mengatur ukuran font lebih kecil */
+  /* position: absolute; Memungkinkan penempatan tepat dalam container */
+  /* top: 0; Posisi di atas container */
+  /* right: 0; Posisi di sebelah kanan container */
+}
+
 
 
 img {
@@ -325,4 +334,56 @@ img {
       padding: 10px;
   }
   
+}
+/* volunteer - dropdown */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content p:hover {background-color: #f1f1f1}
+
+.show {
+  display: block;
+}
+
+/* roles */
+.role {
+  background-color: var(--color1);
+  color: var(--color3);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.role-detail {
+  /* background-color: var(--color2); */
+  color: var(--color1);
+  border-radius: 0.5rem;
+  padding-bottom: 0rem;
+  margin: 0rem;
 }
