@@ -32,3 +32,16 @@ document.querySelectorAll('.read-more-btn').forEach(function(btn) {
 
   var x = setInterval(updateTimer, 1000);
   updateTimer(); // Panggil fungsi ini segera agar timer muncul tanpa menunggu 1 detik pertama
+
+  gapi.load('client', () => {
+    gapi.client.init({
+      apiKey: 'YOUR_API_KEY',
+      clientId: 'YOUR_CLIENT_ID',
+      discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+      scope: 'https://www.googleapis.com/auth/spreadsheets.readonly',
+    }).then(() => {
+      // Authentication succeeded; you can now make API requests.
+      // For example, you can fetch data from a specific spreadsheet.
+    });
+  });
+  
