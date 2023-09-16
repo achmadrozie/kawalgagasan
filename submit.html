@@ -26,7 +26,7 @@
 
           <nav class="fixed-top navbar navbar-expand-sm navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Kawal Gagasan</a>
+              <a class="navbar-brand" href="index.html" style="color:#E9E4D8;">Kawal Gagasan</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,7 +37,7 @@
                       Gagasan 2024
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="anies.html">Anies Baswedan</a>
+                      <a class="dropdown-item" href="anies.html">Anies - Imin</a>
                       <a class="dropdown-item" href="prabowo.html">Prabowo Subianto</a>
                       <a class="dropdown-item" href="ganjar.html">Ganjar Pranowo</a>
                     </div>
@@ -46,15 +46,21 @@
                     <a class="nav-link" href="biografi.html">Biografi</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="volunteer.html">Volunteer</a>
+                    <a class="nav-link" href="sentiment.html">Analisa Sentimen</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">Tentang Kami</a>
+                    <a class="nav-link" href="submit.html"><strong>Submit Gagasan</strong></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="submit.html">Submit Gagasan</a>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="gagasan.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Lain - Lain
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="about.html">Tentang Kami</a>
+                      <a class="dropdown-item" href="volunteer.html">Kesempatan Volunteer</a>
+                      <!-- <a class="dropdown-item" href="ganjar.html">Ganjar Pranowo</a> -->
+                    </div>
                   </li>
-                  
                 </ul>
               </div>
             </div>
@@ -82,7 +88,12 @@
                 <h2>Submit Gagasan Anda</h2>
                 <p>Anda dapat mengirimkan gagasan dari calon presiden yang belum terekam melalui <a href="https://forms.gle/NimqXdW7y4fgyrnt5">form ini</a>.</p>
 
-                    
+                <!-- Formulir Email -->
+                <form action="proses.php" method="post"> <!-- Gantilah "proses.php" dengan URL tempat Anda ingin memproses data formulir -->
+                  <label for="email">Alamat Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
+                  <button type="submit">Kirim</button>
+                </form>
             
               </section>
         
