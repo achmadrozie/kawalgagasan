@@ -120,6 +120,29 @@ img {
   width: 16rem; /* Atur lebar gambar ikon */
 }
 
+/* image for main photo */
+/* .col-md-3.col-12 img {
+  border-radius: 50%;
+  width: 175px;
+  max-height: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+} */
+
+/* image for partai picture */
+/* .col-md-4 img {
+  border-radius:50px; 
+  height: 50px; 
+  width:50px; 
+  max-height: 100%; 
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+} */
+
+/* .container img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+} */
+
 .full-width-btn {
   width: 100%;
 }
